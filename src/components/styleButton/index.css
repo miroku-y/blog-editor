@@ -1,0 +1,139 @@
+.RichEditor-root {
+  background: #fff;
+  border: 1px solid #ddd;
+  font-family: 'Georgia', serif;
+  font-size: 14px;
+  padding: 15px;
+}
+
+.RichEditor-editor {
+  border-top: 1px solid #ddd;
+  cursor: text;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.RichEditor-editor .public-DraftEditorPlaceholder-root,
+.RichEditor-editor .public-DraftEditor-content {
+  margin: 0 -15px -15px;
+  padding: 15px;
+}
+
+.RichEditor-editor .public-DraftEditor-content {
+  min-height: 100px;
+}
+
+.RichEditor-hidePlaceholder .public-DraftEditorPlaceholder-root {
+  display: none;
+}
+
+
+
+
+.RichEditor-controls {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 14px;
+  margin-bottom: 5px;
+  user-select: none;
+}
+
+.RichEditor-styleButton{
+  margin: 0 10px;
+  color: #999;
+  cursor: pointer;
+  margin-right: 16px;
+  padding: 2px 0;
+  display: inline-block;
+  position: relative;
+}
+.defaultButton:hover:before{
+  width:0px;
+  height: 0px;
+  border:5px solid #111;
+  content:'';
+  position: absolute;
+  border-top:none;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  top: 40px;
+  left: 3px;
+}
+.defaultButton:hover:after{
+  content:attr(data-content);
+  white-space: nowrap;
+  height: 15px;
+  line-height: 15px;
+  color: #fff;
+  background: #111;
+  position: absolute;
+  top: 45px;
+    left: 50%;
+    transform: translateX(-50%) translateY(0);
+    padding: 5px;
+    border-radius: 4px;
+    z-index: 10;
+}
+.RichEditor-styleButton i:before {
+  /* display: block;
+  height: 36px;
+  font-size: 18px;
+  line-height: 36px; */
+}
+.RichEditor-styleButton i{
+  font-family: yd-icons!important;
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+}
+.RichEditor-styleButton i::before{
+  display: block;
+  height: 36px;
+  font-size: 18px;
+  line-height: 36px;
+}
+.RichEditor-styleButton i.yd-bold::before{
+  content: "\E82D"
+}
+.RichEditor-styleButton i.yd-italic::before{
+  content: "\E681"
+}
+.RichEditor-styleButton i.yd-underline::before{
+  content: "\E718"
+}
+.RichEditor-styleButton i.yd-superscript::before{
+  content: "\E77A"
+}
+.RichEditor-styleButton i.italic::before{
+  content: "\EA6B"
+}
+.RichEditor-styleButton i.yd-quote::before{
+  content: "\E600"
+}
+.RichEditor-styleButton i.yd-code::before{
+  content: "\E604"
+}
+.RichEditor-styleButton i.yd-list-number::before{
+  content: "\E74B"
+}
+.RichEditor-styleButton i.yd-list::before{
+  content: "\E688"
+}
+.RichEditor-styleButton i.italic::before{
+  content: ""
+}
+.RichEditor-styleButton i.italic::before{
+  content: ""
+}
+.RichEditor-styleButton i.italic::before{
+  content: ""
+}
+.RichEditor-styleButton i.italic::before{
+  content: ""
+}
+.RichEditor-activeButton{
+  color: #5890ff;
+
+}

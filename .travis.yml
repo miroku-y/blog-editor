@@ -10,5 +10,5 @@ before_install:
 script:
  - npm run build
  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
- - docker build -t yangdongMC/BlogEditor:latest .
- - docker push yangdongMC/BlogEditor:latest
+ - docker build -t yangdongMC/blog-editor:latest .
+ - docker push yangdongMC/blog-editor:latest

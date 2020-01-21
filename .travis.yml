@@ -1,11 +1,10 @@
 language: node_js
 node_js:
-  - "10"
+  - "6"
 services:
  - docker
 
 before_install:
- - npm i -g npm@6.1.0
  - npm install
 
 script:

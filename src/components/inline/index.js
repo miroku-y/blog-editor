@@ -6,6 +6,7 @@ import './index.css'
 class InlineStyleControls extends React.Component {
   constructor(props) {
     super(props);
+    this.ref = '';
   }
 
   render() {
